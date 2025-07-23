@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: silver;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(177, 108, 19);
+    height: fit-content;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(143, 86, 11);
+    color: white;
+    padding: 10px 20px;
+
+}
+
+.list {
+    display: flex;
+    gap: 5px;
+    list-style: none;
+    padding: 5px 0;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+li a {
+    font-weight: 600;
+    color:white;
+    border-radius: 8px;
+    padding: 10px;
+    transition: background-color 0.3s , color 0.3s ;
+    
+}
+
+li a:hover {
+    background-color: white;
+    color: rgb(177, 108, 19);
+}
+
+.hero h2 {
+    font-size: 3.5rem;
+}
+
+.hero p {
+    font-size: 25px;
+}
+.hero {
+    background-image: url(images/biryani-png.jpeg);
+    color: rgb(177, 108, 19);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 20px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+#order , #order a{
+    position: relative;
+    z-index: 2;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    border-radius: 8px;
+    border:none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+    letter-spacing: 3px;
+    background-color: white;
+    color: black;
+}
+
+#order:hover{
+    transform: scale(1.05);
+}
+
+.menu h2 {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.image{
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.image:hover{
+     transform: scale(1.05);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    background-color:white;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0 , 0.5);
+    color: rgb(177, 108, 19);
+    font-family: monospace;
+    height: fit-content;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.items h3{
+    margin: 10px auto;
+}
+
+.button{
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid rgb(177, 108, 19);
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: transform 0.3s ease-in-out , background-color 0.3s;
+    cursor: pointer;
+}
+
+.button a , .items p {
+    color: black;
+}
+
+.button:hover{
+     transform: scale(1.05);
+     background-color: rgb(177, 108, 19);
+}
+
+footer{
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 1.5;
+}
